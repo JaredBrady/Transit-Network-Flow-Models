@@ -84,7 +84,10 @@ Install the Python dependencies with:
 pip install -r requirements.txt
 ```
 
-GLPK must also be installed separately so that the `glpsol` command is available from the terminal.
+GLPK must also be installed separately so that the `glpsol` command is available from the terminal. On Ubuntu or WSL, it can typically be installed with:
+
+```bash
+sudo apt install glpk-utils
 
 After the dependencies are installed, open and run:
 

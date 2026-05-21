@@ -88,6 +88,7 @@ GLPK must also be installed separately so that the `glpsol` command is available
 
 ```bash
 sudo apt install glpk-utils
+```
 
 After the dependencies are installed, open and run:
 

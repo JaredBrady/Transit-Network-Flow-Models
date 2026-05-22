@@ -1,8 +1,8 @@
 # Network Flow Models for Transit Planning
 
-This project uses network-flow optimization models to analyze passenger movement through a simplified Vancouver transit network. The notebook applies maximum-flow and minimum-cost flow models to compare transit-planning scenarios, evaluate routing efficiency, and identify targeted network improvements.
+This project uses maximum-flow and minimum-cost flow models to analyze passenger movement through a simplified Vancouver transit network. The models are used to estimate network capacity, evaluate cost-efficient routing, and test whether targeted infrastructure changes improve system performance.
 
-The project is implemented in Python and GLPK, with model formulations written in `.mod` files and scenario data stored in `.dat` files. Python helper functions are used to run GLPK models, read solution files, and plot passenger-flow patterns across the network.
+Python is used to run GLPK models, read solver outputs, and plot passenger-flow patterns across the network.
 
 ## Project Overview
 
@@ -27,7 +27,7 @@ The analysis is organized around a sequence of optimization models:
 
 The maximum-flow models show how added rail infrastructure can substantially increase downtown-bound passenger capacity. In the baseline network, the model routes 2,900 passengers per hour into Downtown. After adding rail connections, downtown-bound flow increases to 10,100 passengers per hour.
 
-The minimum-cost models shift the focus from capacity to efficiency. Under fixed passenger-demand assumptions, the multi-destination model identifies how passenger groups share the network and how corridor-capacity constraints affect routing cost.
+The minimum-cost models shift the focus from capacity to efficiency. These models route fixed passenger-demand levels at minimum cost, helping identify how routing choices and capacity limits affect overall transportation cost.
 
 Sensitivity analysis identifies the connection from `MarineGranville` to `Marine41st` as a promising location for added capacity. A targeted route modification using this connection reduces total transportation cost from approximately **$10,826 per hour** to approximately **$10,655 per hour**, a savings of about **$170 per hour** under the same demand assumptions.
 

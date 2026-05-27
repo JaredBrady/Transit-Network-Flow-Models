@@ -27,7 +27,7 @@ The analysis is organized around a sequence of optimization models:
 
 The maximum-flow models show how added rail infrastructure can substantially increase downtown-bound passenger capacity. In the baseline network, the model routes 2,900 passengers per hour into Downtown. After adding rail connections, downtown-bound flow increases to 10,100 passengers per hour.
 
-The minimum-cost models shift the focus from capacity to efficiency. These models route fixed passenger-demand levels at minimum cost, helping identify how routing choices and capacity limits affect overall transportation cost.
+The minimum-cost models shift the focus from capacity to efficiency. These models route fixed passenger-demand levels at minimum cost, helping to identify how routing choices and capacity limits affect overall transportation cost.
 
 Sensitivity analysis identifies the connection from `MarineGranville` to `Marine41st` as a promising location for added capacity. A targeted route modification using this connection reduces total transportation cost from approximately **$10,826 per hour** to approximately **$10,655 per hour**, a savings of about **$170 per hour** under the same demand assumptions.
 
@@ -105,4 +105,3 @@ The network is a simplified representation of selected Vancouver transit corrido
 ## Acknowledgment
 
 The original concept for this project, along with some raw GLPK model/data files, came from a graduate-level linear programming course. This repository expands that starting point into a complete transit-network analysis focused on scenario comparison, sensitivity analysis, and planning-oriented interpretation.
-    └── plot.py
